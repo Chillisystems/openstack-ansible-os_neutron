@@ -41,5 +41,5 @@ vni_ranges = {{ neutron_provider_networks.network_vxlan_ranges }}
 {% if neutron_plugin_type == 'ml2.ovs' %}
 firewall_driver = iptables_hybrid
 {% endif %}
-enable_security_group = True
+enable_security_group = {{ neutron_security_groups_enabled }}
 enable_ipset = True

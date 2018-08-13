@@ -19,5 +19,5 @@ extensions = qos
 # Security groups
 [securitygroup]
 firewall_driver = {{ neutron_plugins[neutron_plugin_type].driver_firewall }}
-enable_security_group = True
+enable_security_group = {{ neutron_security_groups_enabled }}
 enable_ipset = True

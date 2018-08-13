@@ -49,4 +49,4 @@ shared_physical_device_mappings = {{ neutron_provider_networks.network_sriov_map
 # Security groups
 [securitygroup]
 firewall_driver = {{ neutron_plugins[neutron_plugin_type].driver_firewall }}
-enable_security_group = True
+enable_security_group = {{ neutron_security_groups_enabled }}
